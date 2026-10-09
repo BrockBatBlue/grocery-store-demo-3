@@ -1,0 +1,10 @@
+allowBuilds:
+  '@sentry/cli': true
+  esbuild: true
+  unrs-resolver: false
+  workerd: false
+minimumReleaseAgeExclude:
+  - framer-motion@14.1.0
+  - motion-dom@14.1.0
+  - motion-utils@14.1.0
+  - motion@14.1.0

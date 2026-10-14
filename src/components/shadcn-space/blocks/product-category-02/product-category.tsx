@@ -1,53 +1,57 @@
-"use client";
+'use client'
 
-import { useRef } from "react";
-import { motion, useInView } from "motion/react";
-import { ArrowRight } from "lucide-react";
+import { useRef } from 'react'
+import { motion, useInView } from 'motion/react'
+import { ArrowRight } from 'lucide-react'
 
 interface Category {
-  id: string;
-  name: string;
-  count: string;
-  image: string;
+  id: string
+  name: string
+  count: string
+  image: string
 }
 
 const categories: Category[] = [
   {
-    id: "grocery",
-    name: "Grocery",
-    count: "312 items",
+    id: 'grocery',
+    name: 'Grocery',
+    count: '312 items',
     image:
-      "https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-1.webp",
+      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-1.webp',
   },
   {
-    id: "fashion",
-    name: "Fashion",
-    count: "134 items",
+    id: 'fashion',
+    name: 'Fashion',
+    count: '134 items',
     image:
-      "https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-2.webp",
+      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-2.webp',
   },
   {
-    id: "bags",
-    name: "Bags",
-    count: "89 items",
+    id: 'bags',
+    name: 'Bags',
+    count: '89 items',
     image:
-      "https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-3.webp",
+      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-3.webp',
   },
   {
-    id: "beauty",
-    name: "Beauty",
-    count: "201 items",
+    id: 'beauty',
+    name: 'Beauty',
+    count: '201 items',
     image:
-      "https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-4.webp",
+      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-4.webp',
   },
-];
+]
 
 const ProductCategory = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+  const sectionRef = useRef(null)
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 })
 
   return (
-    <section ref={sectionRef} className="py-12 md:py-20 lg:py-24 bg-background">
+    <section
+      id="departments"
+      ref={sectionRef}
+      className="py-12 md:py-20 lg:py-24 bg-background"
+    >
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="flex flex-col gap-8 h-full">
           {/* Header */}
@@ -127,7 +131,7 @@ const ProductCategory = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ProductCategory;
+export default ProductCategory

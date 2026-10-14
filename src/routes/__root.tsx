@@ -31,10 +31,15 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        title: 'Grocery Store Demo',
       },
     ],
     links: [
+      {
+        rel: 'icon',
+        href: '/images/grocery-store-logo.svg',
+        type: 'image/svg+xml',
+      },
       {
         rel: 'stylesheet',
         href: appCss,

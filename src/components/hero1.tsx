@@ -63,7 +63,7 @@ const Hero1 = (props: Props) => {
   return (
     <section
       className={cn(
-        'py-32 bg-[url(../../public/images/dry-goods.jpg)] bg-no-repeat min-w-full bg-cover bg-center',
+        'py-32 bg-[url(../../public/images/dry-goods.jpg)] bg-no-repeat min-w-full bg-cover bg-center h-240',
         className,
       )}
     >
@@ -114,7 +114,7 @@ const Hero1 = (props: Props) => {
             <img
               src={image.src}
               alt={image.alt}
-              className="h-4/5 w-full rounded-md border border-border object-cover object-top"
+              className="h-130 w-130 rounded-md border border-border object-cover object-top"
             />
           )}
         </div>

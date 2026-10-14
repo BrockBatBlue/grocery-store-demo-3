@@ -1,3 +1,4 @@
+import Contact from '#/components/shadcn-space/blocks/contact-01'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/contact')({
@@ -5,5 +6,9 @@ export const Route = createFileRoute('/contact')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/contact"!</div>
+  return (
+    <div>
+      <Contact />
+    </div>
+  )
 }

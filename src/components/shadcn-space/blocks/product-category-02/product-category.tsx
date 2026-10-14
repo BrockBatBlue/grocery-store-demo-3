@@ -7,38 +7,29 @@ import { ArrowRight } from 'lucide-react'
 interface Category {
   id: string
   name: string
-  count: string
   image: string
 }
 
 const categories: Category[] = [
   {
-    id: 'grocery',
-    name: 'Grocery',
-    count: '312 items',
-    image:
-      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-1.webp',
+    id: 'fresh-produce',
+    name: 'Fresh Produce',
+    image: '../../../../../public/images/fresh-produce-no-sign.png',
   },
   {
-    id: 'fashion',
-    name: 'Fashion',
-    count: '134 items',
-    image:
-      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-2.webp',
+    id: 'frozen-foods',
+    name: 'Frozen Food',
+    image: '../../../../../public/images/frozen-goods.jpg',
   },
   {
-    id: 'bags',
-    name: 'Bags',
-    count: '89 items',
-    image:
-      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-3.webp',
+    id: 'meat-fish',
+    name: 'Meat and Seafood',
+    image: '../../../../../public/images/meat-poultry-section.png',
   },
   {
-    id: 'beauty',
-    name: 'Beauty',
-    count: '201 items',
-    image:
-      'https://images.shadcnspace.com/assets/ecommerce/product-category/product-category-02-4.webp',
+    id: 'dry-goods',
+    name: 'Dry Goods',
+    image: '../../../../../public/images/dry-goods.jpg',
   },
 ]
 
@@ -62,7 +53,7 @@ const ProductCategory = () => {
               transition={{ duration: 0.5, ease: [0.21, 0.47, 0.32, 0.98] }}
               className="text-2xl font-semibold text-foreground"
             >
-              Browse by category
+              Our Store Departments
             </motion.h2>
 
             <motion.div
@@ -75,7 +66,7 @@ const ProductCategory = () => {
               }}
             >
               <a
-                href="#"
+                href="/departments"
                 className="group flex items-center gap-1.5 text-sm font-medium text-foreground hover:opacity-80 transition-all"
               >
                 See all
@@ -102,7 +93,7 @@ const ProductCategory = () => {
                   className="shrink-0 max-w-67.5 w-full"
                 >
                   <a
-                    href="#"
+                    href={`/${category.id}`}
                     className="group flex items-center overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/20"
                   >
                     {/* Image Container */}
@@ -118,9 +109,6 @@ const ProductCategory = () => {
                     <div className="flex-1 p-6">
                       <p className="text-base font-medium text-foreground">
                         {category.name}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {category.count}
                       </p>
                     </div>
                   </a>

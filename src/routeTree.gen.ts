@@ -10,9 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as BakeryRouteImport } from './routes/bakery'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DairyRouteImport } from './routes/dairy'
+import { Route as DepartmentsRouteImport } from './routes/departments'
+import { Route as DryGoodsRouteImport } from './routes/dry-goods'
 import { Route as FreshProduceRouteImport } from './routes/fresh-produce'
 import { Route as FrozenFoodsRouteImport } from './routes/frozen-foods'
 import { Route as MeatFishRouteImport } from './routes/meat-fish'
@@ -20,11 +21,6 @@ import { Route as MeatFishRouteImport } from './routes/meat-fish'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BakeryRoute = BakeryRouteImport.update({
-  id: '/bakery',
-  path: '/bakery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -35,6 +31,16 @@ const ContactRoute = ContactRouteImport.update({
 const DairyRoute = DairyRouteImport.update({
   id: '/dairy',
   path: '/dairy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DepartmentsRoute = DepartmentsRouteImport.update({
+  id: '/departments',
+  path: '/departments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DryGoodsRoute = DryGoodsRouteImport.update({
+  id: '/dry-goods',
+  path: '/dry-goods',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FreshProduceRoute = FreshProduceRouteImport.update({
@@ -55,18 +61,20 @@ const MeatFishRoute = MeatFishRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/bakery': typeof BakeryRoute
   '/contact': typeof ContactRoute
   '/dairy': typeof DairyRoute
+  '/departments': typeof DepartmentsRoute
+  '/dry-goods': typeof DryGoodsRoute
   '/fresh-produce': typeof FreshProduceRoute
   '/frozen-foods': typeof FrozenFoodsRoute
   '/meat-fish': typeof MeatFishRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/bakery': typeof BakeryRoute
   '/contact': typeof ContactRoute
   '/dairy': typeof DairyRoute
+  '/departments': typeof DepartmentsRoute
+  '/dry-goods': typeof DryGoodsRoute
   '/fresh-produce': typeof FreshProduceRoute
   '/frozen-foods': typeof FrozenFoodsRoute
   '/meat-fish': typeof MeatFishRoute
@@ -74,9 +82,10 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/bakery': typeof BakeryRoute
   '/contact': typeof ContactRoute
   '/dairy': typeof DairyRoute
+  '/departments': typeof DepartmentsRoute
+  '/dry-goods': typeof DryGoodsRoute
   '/fresh-produce': typeof FreshProduceRoute
   '/frozen-foods': typeof FrozenFoodsRoute
   '/meat-fish': typeof MeatFishRoute
@@ -85,27 +94,30 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/bakery'
     | '/contact'
     | '/dairy'
+    | '/departments'
+    | '/dry-goods'
     | '/fresh-produce'
     | '/frozen-foods'
     | '/meat-fish'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/bakery'
     | '/contact'
     | '/dairy'
+    | '/departments'
+    | '/dry-goods'
     | '/fresh-produce'
     | '/frozen-foods'
     | '/meat-fish'
   id:
     | '__root__'
     | '/'
-    | '/bakery'
     | '/contact'
     | '/dairy'
+    | '/departments'
+    | '/dry-goods'
     | '/fresh-produce'
     | '/frozen-foods'
     | '/meat-fish'
@@ -113,9 +125,10 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  BakeryRoute: typeof BakeryRoute
   ContactRoute: typeof ContactRoute
   DairyRoute: typeof DairyRoute
+  DepartmentsRoute: typeof DepartmentsRoute
+  DryGoodsRoute: typeof DryGoodsRoute
   FreshProduceRoute: typeof FreshProduceRoute
   FrozenFoodsRoute: typeof FrozenFoodsRoute
   MeatFishRoute: typeof MeatFishRoute
@@ -130,13 +143,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/bakery': {
-      id: '/bakery'
-      path: '/bakery'
-      fullPath: '/bakery'
-      preLoaderRoute: typeof BakeryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -149,6 +155,20 @@ declare module '@tanstack/react-router' {
       path: '/dairy'
       fullPath: '/dairy'
       preLoaderRoute: typeof DairyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/departments': {
+      id: '/departments'
+      path: '/departments'
+      fullPath: '/departments'
+      preLoaderRoute: typeof DepartmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dry-goods': {
+      id: '/dry-goods'
+      path: '/dry-goods'
+      fullPath: '/dry-goods'
+      preLoaderRoute: typeof DryGoodsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fresh-produce': {
@@ -177,9 +197,10 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  BakeryRoute: BakeryRoute,
   ContactRoute: ContactRoute,
   DairyRoute: DairyRoute,
+  DepartmentsRoute: DepartmentsRoute,
+  DryGoodsRoute: DryGoodsRoute,
   FreshProduceRoute: FreshProduceRoute,
   FrozenFoodsRoute: FrozenFoodsRoute,
   MeatFishRoute: MeatFishRoute,

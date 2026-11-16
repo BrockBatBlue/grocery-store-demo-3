@@ -1,5 +1,5 @@
-import Department03 from '#/components/shadcn-space/blocks/portfolio-01/department-03'
 import { createFileRoute } from '@tanstack/react-router'
+import { Department3 } from '#/components/shadcn-space/blocks/portfolio-01/third-department'
 
 export const Route = createFileRoute('/meat-fish')({
   component: RouteComponent,
@@ -8,7 +8,7 @@ export const Route = createFileRoute('/meat-fish')({
 function RouteComponent() {
   return (
     <div>
-      <Department03 />
+      <Department3 />
     </div>
   )
 }

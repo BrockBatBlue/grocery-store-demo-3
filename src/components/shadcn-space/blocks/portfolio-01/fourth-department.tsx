@@ -29,27 +29,10 @@ const Department4 = ({ className }: Content1Props) => {
               </p>
               <figure className="my-8">
                 <img
-                  src="/images/grocery-store.jpg"
-                  alt="Shelves stocked with groceries and household goods inside a small shop in Mexico"
-                  className="aspect-video w-full rounded-md object-cover"
+                  src="/images/dry-goods.jpg"
+                  alt="Dry goods section in a Mexican grocery store"
+                  className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
                 />
-                <figcaption className="mt-2 text-sm text-muted-foreground">
-                  Photo by{' '}
-                  <a
-                    href="https://commons.wikimedia.org/wiki/File:Abarrotes,_mercado_Michoac%C3%A1n.jpg"
-                    className="underline"
-                  >
-                    Xanyssel
-                  </a>{' '}
-                  via Wikimedia Commons, licensed under{' '}
-                  <a
-                    href="https://creativecommons.org/licenses/by-sa/4.0/"
-                    className="underline"
-                  >
-                    CC BY-SA 4.0
-                  </a>
-                  .
-                </figcaption>
               </figure>
             </div>
           </div>

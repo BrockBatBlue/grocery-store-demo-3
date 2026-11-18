@@ -19,6 +19,13 @@ const Department1 = ({ className }: Content1Props) => {
               <h1 className="mt-3 text-3xl font-extrabold">
                 We have an extensive variety of fresh produce.
               </h1>
+              <figure className="my-8">
+                <img
+                  src="/images/fresh-produce-aisle.png"
+                  alt="Fresh produce section in a Mexican grocery store"
+                  className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
+                />
+              </figure>
               <p className="mt-2 text-lg text-muted-foreground">
                 Our fresh produce section is stock with a wide variety of
                 fruits, greens, vegetables, herbs, and tubers locally sourced
@@ -29,30 +36,6 @@ const Department1 = ({ className }: Content1Props) => {
                 have a wide variety of tubers, including potatoes, yams, and
                 sweet potatoes.
               </p>
-              <figure className="my-8">
-                <img
-                  src="/images/grocery-store.jpg"
-                  alt="Shelves stocked with groceries and household goods inside a small shop in Mexico"
-                  className="aspect-video w-full rounded-md object-cover"
-                />
-                <figcaption className="mt-2 text-sm text-muted-foreground">
-                  Photo by{' '}
-                  <a
-                    href="https://commons.wikimedia.org/wiki/File:Abarrotes,_mercado_Michoac%C3%A1n.jpg"
-                    className="underline"
-                  >
-                    Xanyssel
-                  </a>{' '}
-                  via Wikimedia Commons, licensed under{' '}
-                  <a
-                    href="https://creativecommons.org/licenses/by-sa/4.0/"
-                    className="underline"
-                  >
-                    CC BY-SA 4.0
-                  </a>
-                  .
-                </figcaption>
-              </figure>
             </div>
           </div>
         </div>

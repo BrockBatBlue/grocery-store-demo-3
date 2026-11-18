@@ -23,23 +23,23 @@ export type NavigationSection = {
 
 const navigationData: NavigationSection[] = [
   {
-    title: 'About us',
+    title: 'Conócenos',
     href: '/#about',
   },
   {
-    title: 'Departments',
+    title: 'Departamentos',
     href: '/#departments',
   },
   {
-    title: 'Testimonials',
+    title: 'Opiniones',
     href: '/#testimonials',
   },
   {
-    title: 'Contact',
+    title: 'Contacto',
     href: '/contact',
   },
   {
-    title: 'Our Catalogue',
+    title: 'Catálogo',
     href: '#',
   },
 ]
@@ -52,7 +52,7 @@ const CollaborateButton = ({ className }: { className?: string }) => (
     )}
   >
     <span className="relative z-10 transition-all duration-500 hover:cursor-pointer">
-      Our Catalogue
+      Catálogo
     </span>
     <div className="absolute right-1 w-8 h-8 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
       <ArrowUpRight size={16} />
@@ -96,7 +96,7 @@ const Navbar = () => {
             <a href="/">
               <img
                 src="../../../../../public/images/grocery-store-logo.svg"
-                alt="Logo"
+                alt="Logotipo"
                 className="w-8 h-8 lg:w-10 lg:h-10"
               />
             </a>
@@ -122,7 +122,7 @@ const Navbar = () => {
               <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
                 <DropdownMenuTrigger className="rounded-full bg-background border border-border p-2 outline-none flex items-center justify-center cursor-pointer transition-colors">
                   <TextAlignJustify size={20} />
-                  <span className="sr-only">Menu</span>
+                  <span className="sr-only">Menú</span>
                 </DropdownMenuTrigger>
 
                 <DropdownMenuContent align="end" className="w-56 mt-2">

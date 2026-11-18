@@ -15,22 +15,23 @@ const Department5 = ({ className }: Content1Props) => {
         <div className="relative grid-cols-1 gap-20 lg:grid">
           <div className="lg:col-span-2">
             <div>
-              <Badge variant="outline">Our Dairy</Badge>
+              <Badge variant="outline">Nuestros lácteos</Badge>
               <h1 className="mt-3 text-3xl font-extrabold">
-                Discover our wide variety of dairy section favorites.
+                Descubre nuestra gran variedad de productos lácteos.
               </h1>
               <figure className="my-8">
                 <img
                   src="/images/dairy-section.png"
-                  alt="Dairy section in a Mexican grocery store"
+                  alt="Sección de lácteos en una tienda de abarrotes mexicana"
                   className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
                 />
               </figure>
               <p className="mt-2 text-lg text-muted-foreground">
-                Find milk for every preference, from ultra-pasteurized organic
-                varieties to pasteurized milk kept refrigerated. Explore
-                different butters, ice creams, yogurts and other cultured dairy
-                products, as well as a variety of dairy-based drinks.
+                Encuentra leche para todos los gustos, desde leche orgánica
+                ultrapasteurizada hasta leche pasteurizada refrigerada. También
+                ofrecemos distintas variedades de mantequilla, helado, yogur y
+                otros productos lácteos fermentados, además de bebidas a base de
+                leche.
               </p>
             </div>
           </div>

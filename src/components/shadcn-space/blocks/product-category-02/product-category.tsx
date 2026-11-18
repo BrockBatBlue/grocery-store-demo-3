@@ -13,22 +13,22 @@ interface Category {
 const categories: Category[] = [
   {
     id: 'fresh-produce',
-    name: 'Fresh Produce',
+    name: 'Frutas y verduras',
     image: '../../../../../public/images/fresh-produce-no-sign.png',
   },
   {
     id: 'frozen-foods',
-    name: 'Frozen Food',
+    name: 'Congelados',
     image: '../../../../../public/images/frozen-goods.jpg',
   },
   {
     id: 'meat-fish',
-    name: 'Meat and Seafood',
+    name: 'Carnes y pescados',
     image: '../../../../../public/images/meat-poultry-section.png',
   },
   {
     id: 'dry-goods',
-    name: 'Dry Goods',
+    name: 'Abarrotes',
     image: '../../../../../public/images/dry-goods.jpg',
   },
 ]
@@ -53,7 +53,7 @@ const ProductCategory = () => {
               transition={{ duration: 0.5, ease: [0.21, 0.47, 0.32, 0.98] }}
               className="text-2xl font-semibold text-foreground"
             >
-              Our Store Departments
+              Departamentos de la tienda
             </motion.h2>
 
             <motion.div
@@ -69,7 +69,7 @@ const ProductCategory = () => {
                 href="/departments"
                 className="group flex items-center gap-1.5 text-sm font-medium text-foreground hover:opacity-80 transition-all"
               >
-                See all
+                Ver todos
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </motion.div>

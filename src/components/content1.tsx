@@ -15,22 +15,21 @@ const Content1 = ({ className }: Content1Props) => {
         <div className="relative grid-cols-1 gap-20 lg:grid">
           <div className="lg:col-span-2">
             <div>
-              <Badge variant="outline">About Our Store</Badge>
+              <Badge variant="outline">Acerca de nuestra tienda</Badge>
               <h1 className="mt-3 text-3xl font-extrabold">
-                We were established in 1963, and have been serving our customers
-                with quality groceries ever since.
+                Desde 1963, ofrecemos abarrotes de calidad y atendemos a nuestra
+                comunidad.
               </h1>
               <p className="mt-2 text-lg text-muted-foreground">
-                Our store is a family-owned business that has been serving the
-                community for over 50 years. We pride ourselves on providing
-                high-quality products and exceptional customer service. Our
-                knowledgeable staff is always ready to assist you in finding the
-                best products for your needs.
+                Somos un negocio familiar que ha atendido a la comunidad por más
+                de 50 años. Nos enorgullece ofrecer productos de calidad y un
+                servicio excepcional. Nuestro personal conoce bien los productos
+                y está listo para ayudarte a encontrar lo que necesitas.
               </p>
               <figure className="my-8">
                 <img
                   src="/images/grocery-store.jpg"
-                  alt="Shelves stocked with groceries and household goods inside a small shop in Mexico"
+                  alt="Abarrotes y productos para el hogar en una tienda de México"
                   className="aspect-video w-full rounded-md object-cover"
                 />
                 <figcaption className="mt-2 text-sm text-muted-foreground">
@@ -41,7 +40,7 @@ const Content1 = ({ className }: Content1Props) => {
                   >
                     Xanyssel
                   </a>{' '}
-                  via Wikimedia Commons, licensed under{' '}
+                  en Wikimedia Commons, con licencia{' '}
                   <a
                     href="https://creativecommons.org/licenses/by-sa/4.0/"
                     className="underline"

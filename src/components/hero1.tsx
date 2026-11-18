@@ -35,22 +35,22 @@ interface Hero1Props extends HeroBasicProps {}
 type Props = Partial<Hero1Props>
 
 const defaultProps: Hero1Props = {
-  heading: 'Our Grocery Store',
+  heading: 'Nuestra tienda de abarrotes',
   description:
-    'Located in the heart of Mexico City, we provide the freshest produce and most delicious ready-made meals. We provide vegan and organic food products.',
+    'Ubicada en el corazón de la Ciudad de México, ofrecemos frutas y verduras frescas, así como deliciosos platillos preparados. También contamos con productos veganos y orgánicos.',
   buttons: {
     primary: {
-      text: 'Browse Our Catalogue',
+      text: 'Ver catálogo',
       url: 'https://shadcnblocks.com',
     },
     secondary: {
-      text: 'Contact Us',
+      text: 'Contáctanos',
       url: 'https://shadcnblocks.com',
     },
   },
   image: {
     src: '../../public/images/map-with-radius-5mi.png',
-    alt: 'Area Map of Grocery Store',
+    alt: 'Mapa del área de cobertura de la tienda',
   },
 }
 

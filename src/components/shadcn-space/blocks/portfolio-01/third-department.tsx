@@ -15,22 +15,23 @@ const Department3 = ({ className }: Content1Props) => {
         <div className="relative grid-cols-1 gap-20 lg:grid">
           <div className="lg:col-span-2">
             <div>
-              <Badge variant="outline">Our Meat and Fish</Badge>
+              <Badge variant="outline">Nuestras carnes y pescados</Badge>
               <h1 className="mt-3 text-3xl font-extrabold">
-                We offer a wide variety of fresh and frozen meats and fish.
+                Ofrecemos una gran variedad de carnes y pescados frescos y
+                congelados.
               </h1>
               <figure className="my-8">
                 <img
                   src="/images/meat-poultry-section.png"
-                  alt="Meat and poultry section in a Mexican grocery store"
+                  alt="Sección de carnes y aves en una tienda de abarrotes mexicana"
                   className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
                 />
               </figure>
               <p className="mt-2 text-lg text-muted-foreground">
-                Our meat and fish section features a variety of fresh selections
-                replenished daily, along with frozen options for convenient
-                storage and meal planning. Choose from cuts and varieties for
-                all kinds of recipes.
+                Nuestra sección de carnes y pescados ofrece distintas opciones
+                frescas que se surten a diario, además de productos congelados
+                para guardar y planear tus comidas. Elige entre diversos cortes
+                y variedades para todo tipo de recetas.
               </p>
             </div>
           </div>

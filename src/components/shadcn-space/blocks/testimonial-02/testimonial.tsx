@@ -27,41 +27,41 @@ export interface Testimonial01Props {
 const defaultTestimonials: Testimonial[] = [
   {
     quote:
-      'I love finding fresh fruits and vegetables here. The staff is always friendly, and I can count on the quality every time I shop.',
+      'Me encanta encontrar frutas y verduras frescas aquí. El personal siempre es amable y sé que puedo confiar en la calidad cada vez que vengo.',
     author: 'María González',
-    role: 'Loyal customer',
+    role: 'Cliente frecuente',
     image:
       'https://images.pexels.com/photos/8422701/pexels-photo-8422701.jpeg?auto=compress&cs=tinysrgb&w=1000',
   },
   {
     quote:
-      'The meat and poultry selection is excellent, and the prices are fair. This has become my go-to grocery store for the whole family.',
+      'La variedad de carnes y aves es excelente y los precios son justos. Esta ya es mi tienda de confianza para toda la familia.',
     author: 'Carlos Rodríguez',
-    role: 'Local customer',
+    role: 'Cliente de la zona',
     image:
       'https://images.pexels.com/photos/14349176/pexels-photo-14349176.jpeg?auto=compress&cs=tinysrgb&w=1000',
   },
   {
     quote:
-      'I can find everything I need in one place, from fresh produce to baked goods. Shopping here is convenient and welcoming.',
+      'Aquí encuentro todo lo que necesito, desde frutas y verduras frescas hasta pan recién hecho. Comprar aquí es práctico y agradable.',
     author: 'Ana Martínez',
-    role: 'Regular customer',
+    role: 'Cliente frecuente',
     image:
       'https://images.pexels.com/photos/4177735/pexels-photo-4177735.jpeg?auto=compress&cs=tinysrgb&w=1000',
   },
   {
     quote:
-      'The store is clean, well stocked, and has a great selection of dairy and frozen foods. I always enjoy stopping by.',
+      'La tienda está limpia, bien surtida y tiene una gran variedad de lácteos y congelados. Siempre me da gusto venir.',
     author: 'José Hernández',
-    role: 'Local customer',
+    role: 'Cliente de la zona',
     image:
       'https://images.pexels.com/photos/8422670/pexels-photo-8422670.jpeg?auto=compress&cs=tinysrgb&w=1000',
   },
   {
     quote:
-      'The fresh bread and helpful service make this grocery store special. It is a pleasure to shop here each week.',
+      'El pan recién hecho y el servicio atento hacen especial a esta tienda. Da gusto venir de compras cada semana.',
     author: 'Lucía Fernández',
-    role: 'Regular customer',
+    role: 'Cliente frecuente',
     image:
       'https://images.unsplash.com/photo-1770739318724-f7b285d8620b?auto=format&fit=crop&w=1000&q=80',
   },
@@ -84,10 +84,10 @@ export default function Testimonial01({
             className="flex flex-col gap-3"
           >
             <Badge className="text-sm h-auto py-1 px-3 border-0 w-fit">
-              Testimonials
+              Opiniones
             </Badge>
             <h2 className="sm:text-5xl text-xl leading-none font-medium tracking">
-              What our customers are saying
+              Lo que dicen nuestros clientes
             </h2>
           </motion.div>
           <motion.div
@@ -105,12 +105,12 @@ export default function Testimonial01({
                         <div className="shrink-0 flex items-start">
                           <img
                             src="https://images.shadcnspace.com/assets/svgs/icon-quote.svg"
-                            alt="muted quote"
+                            alt="Comillas"
                             className="dark:hidden"
                           />
                           <img
                             src="https://images.shadcnspace.com/assets/svgs/icon-quote-white.svg"
-                            alt="muted quote"
+                            alt="Comillas"
                             className="hidden dark:block"
                           />
                         </div>

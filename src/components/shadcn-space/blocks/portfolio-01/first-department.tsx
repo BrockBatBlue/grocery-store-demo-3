@@ -15,26 +15,24 @@ const Department1 = ({ className }: Content1Props) => {
         <div className="relative grid-cols-1 gap-20 lg:grid">
           <div className="lg:col-span-2">
             <div>
-              <Badge variant="outline">Our Fresh Produce</Badge>
+              <Badge variant="outline">Nuestras frutas y verduras</Badge>
               <h1 className="mt-3 text-3xl font-extrabold">
-                We have an extensive variety of fresh produce.
+                Tenemos una gran variedad de frutas y verduras frescas.
               </h1>
               <figure className="my-8">
                 <img
                   src="/images/fresh-produce-aisle.png"
-                  alt="Fresh produce section in a Mexican grocery store"
+                  alt="Sección de frutas y verduras frescas en una tienda de abarrotes mexicana"
                   className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
                 />
               </figure>
               <p className="mt-2 text-lg text-muted-foreground">
-                Our fresh produce section is stock with a wide variety of
-                fruits, greens, vegetables, herbs, and tubers locally sourced
-                and imported. We keep our produce Latin American. You can find
-                mangoes, papayas, avocados, and many types of berries. We also
-                have a wide variety of greens, including kale, spinach, and
-                arugula. Our herbs include cilantro, parsley, and basil. We also
-                have a wide variety of tubers, including potatoes, yams, and
-                sweet potatoes.
+                Nuestra sección de frutas y verduras ofrece una gran variedad de
+                frutas, verduras, hierbas y tubérculos de productores locales y
+                de Latinoamérica. Encuentra mangos, papayas, aguacates y
+                distintos tipos de frutos rojos. También tenemos hojas verdes
+                como kale, espinaca y arúgula; hierbas como cilantro, perejil y
+                albahaca; y tubérculos como papa, ñame y camote.
               </p>
             </div>
           </div>

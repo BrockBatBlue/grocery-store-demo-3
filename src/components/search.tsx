@@ -24,7 +24,7 @@ export function Search({ className = '' }: SearchProps) {
   return (
     <input
       type="text"
-      placeholder="Search articles..."
+      placeholder="Buscar artículos..."
       onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
         handleSearch(e.target.value)
       }

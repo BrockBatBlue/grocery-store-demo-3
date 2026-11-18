@@ -28,7 +28,7 @@ export function StrapiImage({
         className={`flex items-center justify-center bg-[var(--chip-bg)] text-sm text-[var(--sea-ink-soft)] ${className}`}
         style={{ width, height }}
       >
-        <span>Image not available</span>
+        <span>Imagen no disponible</span>
       </div>
     )
   }

@@ -95,43 +95,43 @@ type FooterData = {
 
 const footerSections: FooterData[] = [
   {
-    title: 'Sitemap',
+    title: 'Mapa del sitio',
     links: [
       {
-        title: 'Contact us',
+        title: 'Contáctanos',
         href: '/contact',
       },
       {
-        title: 'About us',
+        title: 'Conócenos',
         href: '/#about',
       },
       {
-        title: 'Testimonials',
+        title: 'Opiniones',
         href: '/#testimonials',
       },
       {
-        title: 'Departments',
+        title: 'Departamentos',
         href: '/#departments',
       },
       {
-        title: 'Our Catalogue',
+        title: 'Catálogo',
         href: '#',
       },
     ],
   },
   {
-    title: 'Other Pages',
+    title: 'Otras páginas',
     links: [
       {
         title: 'Error 404',
         href: '#',
       },
       {
-        title: 'Terms & Conditions',
+        title: 'Términos y condiciones',
         href: '#',
       },
       {
-        title: 'Privacy Policy',
+        title: 'Aviso de privacidad',
         href: '#',
       },
     ],
@@ -150,15 +150,15 @@ const Footer = () => {
                 <a href="#">
                   <img
                     src="../../../../../public/images/grocery-store-logo.svg"
-                    alt="Logo"
+                    alt="Logotipo"
                     className="w-10 h-10 lg:w-12 lg:h-12"
                   />
                 </a>
 
                 <p className="text-base font-normal text-muted-foreground">
-                  We are a team of passionate individuals dedicated to providing
-                  the best products and services to our customers. Our mission
-                  is to make your shopping experience enjoyable and convenient.
+                  Somos un equipo comprometido con ofrecerte productos y
+                  servicios de calidad. Queremos que tu experiencia de compra
+                  sea agradable y práctica.
                 </p>
 
                 {/* social links */}
@@ -218,7 +218,7 @@ const Footer = () => {
             <div className="col-span-3">
               <div className="flex flex-col gap-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
                 <p className="text-base font-medium text-foreground">
-                  Contact Details
+                  Información de contacto
                 </p>
                 <ul className="flex flex-col gap-3">
                   <li>
@@ -248,7 +248,7 @@ const Footer = () => {
           </div>
           <Separator orientation="horizontal" />
           <p className="text-sm font-normal text-muted-foreground text-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
-            ©2026 Our Grocery Store. All Rights Reserved
+            © 2026 Nuestra tienda de abarrotes. Todos los derechos reservados.
           </p>
         </div>
       </div>

@@ -7,20 +7,20 @@ const ContactInfo = () => {
         <div className="flex gap-3 items-center">
           <div className="w-2 h-2 rounded-full bg-teal-400"></div>
           <p className="text-base font-normal text-muted-foreground">
-            We are open 9am - 9pm!
+            ¡Abrimos de 9:00 a. m. a 9:00 p. m.!
           </p>
         </div>
         <p className="text-3xl  md:text-4xl font-medium text-foreground">
-          Call us to see if we have your products in stock!
+          ¡Llámanos para confirmar si tenemos tus productos disponibles!
         </p>
         <p className="text-2xl font-medium text-foreground italic">
-          Email us at info@grocerystore.com.
+          Escríbenos a info@grocerystore.com.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row justify-between gap-6 animate-in fade-in slide-in-from-left-10 duration-1000 delay-100 ease-in-out fill-mode-both">
         <div className="flex flex-col gap-1">
           <p className="text-sm font-normal text-muted-foreground">
-            Want us to hold something at the store for you?
+            ¿Quieres que apartemos algún producto en la tienda?
           </p>
           <a
             href="tel:+323-25-8964"
@@ -31,7 +31,7 @@ const ContactInfo = () => {
         </div>
       </div>
       <div className="flex flex-col gap-1 animate-in fade-in slide-in-from-left-10 duration-1000 delay-100 ease-in-out fill-mode-both">
-        <p className="text-sm font-normal text-muted-foreground">Location</p>
+        <p className="text-sm font-normal text-muted-foreground">Ubicación</p>
         <p className="text-base font-medium text-primary">
           Mark Avenue, Dalls Road, New York
         </p>

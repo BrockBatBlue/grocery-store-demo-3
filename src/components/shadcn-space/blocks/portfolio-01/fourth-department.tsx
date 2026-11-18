@@ -15,22 +15,22 @@ const Department4 = ({ className }: Content1Props) => {
         <div className="relative grid-cols-1 gap-20 lg:grid">
           <div className="lg:col-span-2">
             <div>
-              <Badge variant="outline">Our Dry Goods</Badge>
+              <Badge variant="outline">Nuestros abarrotes</Badge>
               <h1 className="mt-3 text-3xl font-extrabold">
-                We have an extensive variety of dry goods and pantry staples.
+                Tenemos una gran variedad de productos para tu despensa.
               </h1>
               <figure className="my-8">
                 <img
                   src="/images/dry-goods.jpg"
-                  alt="Dry goods section in a Mexican grocery store"
+                  alt="Sección de abarrotes en una tienda de México"
                   className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
                 />
               </figure>
               <p className="mt-2 text-lg text-muted-foreground">
-                Explore dry goods ranging from minimally processed favorites
-                like honey and seasonings to ready-made, shelf-stable meals.
-                Stock your pantry with versatile ingredients and convenient
-                options for everyday cooking.
+                Explora productos que van desde opciones mínimamente procesadas,
+                como miel y condimentos, hasta platillos preparados que puedes
+                guardar en la alacena. Abastece tu despensa con ingredientes
+                versátiles y opciones prácticas para cocinar todos los días.
               </p>
             </div>
           </div>

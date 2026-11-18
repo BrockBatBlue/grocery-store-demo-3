@@ -15,18 +15,10 @@ const Department5 = ({ className }: Content1Props) => {
         <div className="relative grid-cols-1 gap-20 lg:grid">
           <div className="lg:col-span-2">
             <div>
-              <Badge variant="outline">About Our Store</Badge>
+              <Badge variant="outline">Our Dairy</Badge>
               <h1 className="mt-3 text-3xl font-extrabold">
-                We were established in 1963, and have been serving our customers
-                with quality groceries ever since.
+                Discover our wide variety of dairy section favorites.
               </h1>
-              <p className="mt-2 text-lg text-muted-foreground">
-                Our store is a family-owned business that has been serving the
-                community for over 50 years. We pride ourselves on providing
-                high-quality products and exceptional customer service. Our
-                knowledgeable staff is always ready to assist you in finding the
-                best products for your needs.
-              </p>
               <figure className="my-8">
                 <img
                   src="/images/dairy-section.png"
@@ -34,6 +26,12 @@ const Department5 = ({ className }: Content1Props) => {
                   className="mx-auto aspect-video w-[calc(100%-20px)] rounded-md object-cover"
                 />
               </figure>
+              <p className="mt-2 text-lg text-muted-foreground">
+                Find milk for every preference, from ultra-pasteurized organic
+                varieties to pasteurized milk kept refrigerated. Explore
+                different butters, ice creams, yogurts and other cultured dairy
+                products, as well as a variety of dairy-based drinks.
+              </p>
             </div>
           </div>
         </div>
